@@ -154,6 +154,32 @@ nav a.active {
   text-align: center;
 }
 
+.birthday-badge {
+  display: table;
+  margin: 0 auto 24px;
+  padding: 9px 17px;
+  border: 1px solid #ffd18a70;
+  border-radius: 999px;
+  color: #ffe4b2;
+  background: #ffd18a12;
+  box-shadow: 0 0 24px #ed42bc30;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: badge-glow 2.5s ease-in-out infinite alternate;
+}
+
+.birthday-badge span {
+  color: var(--gold);
+  padding: 0 4px;
+}
+
+@keyframes badge-glow {
+  to {
+    box-shadow: 0 0 30px #ed42bc70;
+  }
+}
+
 .song-title {
   color: #ffd9f1;
   font-size: 12px;
@@ -178,6 +204,7 @@ nav a.active {
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -3px;
+  text-shadow: 0 0 45px #ed42bc38;
 }
 
 .hero h1 span,
@@ -530,6 +557,44 @@ footer a {
   color: #ff9be5;
   background: #300d24d9;
   font-size: 22px;
+}
+
+.music-hint {
+  position: fixed;
+  z-index: 20;
+  left: 78px;
+  bottom: 25px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border: 1px solid #ff9be580;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #ed42bcf2, #8c297bf2);
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 0 18px #ed42bc99;
+  animation: music-hint-pulse 1.8s ease-in-out infinite;
+}
+
+.music-hint-arrow {
+  color: #fff;
+  font-size: 20px;
+  animation: music-hint-point 1s ease-in-out infinite alternate;
+}
+
+@keyframes music-hint-pulse {
+  50% {
+    box-shadow: 0 0 26px #ed42bccc;
+  }
+}
+
+@keyframes music-hint-point {
+  to {
+    transform: translateX(-4px);
+  }
 }
 
 @media (max-width: 760px) {
