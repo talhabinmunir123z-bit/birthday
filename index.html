@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#300d24">
+  <title>A Birthday Letter For You ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <header class="navbar">
+    <a href="#surface" class="logo">♡ <span>My Love</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <a href="#surface" class="active">Surface</a>
+      <a href="#memories">Our Memories</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#letter">The Letter</a>
+      <a href="#wishes">Wishes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="surface">
+      <div class="wave wave-one"></div>
+      <div class="wave wave-two"></div>
+
+      <div class="hero-content">
+        <p class="song-title">Meri Zindagi Hai Tu</p>
+        <p class="eyebrow">— A MESSAGE CARRIED IN ON THE TIDE, FOR YOU</p>
+        <h1>Happy Birthday,<br>
+          <span>My Favorite Person</span>
+        </h1>
+        <p class="intro">
+          Somewhere past the breakers, there's a letter that's been waiting for today.<br>
+          Scroll down — the tide is coming in, and it brought something special for <b>you.</b>
+        </p>
+        <div class="hero-buttons">
+          <a href="#memories" class="btn primary">Begin the Descent ↓</a>
+          <a href="#letter" class="btn outline">Jump Straight to the Letter</a>
+        </div>
+        <a href="#memories" class="scroll-cue">
+          <span class="mouse"></span>
+          SCROLL TO DIVE IN
+        </a>
+      </div>
+      <span class="side-note">WITH LOVE · ALWAYS</span>
+    </section>
+
+    <section class="section memories" id="memories">
+      <p class="eyebrow">01 — LITTLE THINGS, BIG FEELINGS</p>
+      <h2>Our Little <span>Universe</span></h2>
+      <p class="section-intro">Some moments are small, but somehow they become our whole world.</p>
+
+      <div class="memory-grid">
+        <article class="memory-card">
+          <img class="memory-photo" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="A loving couple walking together">
+          <div class="memory-content">
+            <div class="memory-icon">✦</div>
+            <h3>The First Hello</h3>
+            <p>Every beautiful story has a beginning. I'm so glad ours did.</p>
+          </div>
+        </article>
+        <article class="memory-card">
+          <img class="memory-photo" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="A couple laughing together">
+          <div class="memory-content">
+            <div class="memory-icon">♡</div>
+            <h3>The Little Things</h3>
+            <p>The smiles, the laughs, and the moments that mean more than words.</p>
+          </div>
+        </article>
+        <article class="memory-card">
+          <img class="memory-photo" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85" alt="Couple enjoying a warm romantic moment">
+          <div class="memory-content">
+            <div class="memory-icon">☾</div>
+            <h3>My Safe Place</h3>
+            <p>Some people make the world feel softer just by being in it.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <p class="eyebrow">02 — MOMENTS WORTH KEEPING</p>
+      <h2>A Few Pieces of <span>Forever</span></h2>
+      <p class="section-intro">Every picture holds a feeling. Every memory has a little magic.</p>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="A couple smiling together">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Two people sharing a beautiful sunset moment">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85" alt="A romantic close-up portrait">
+      </div>
+      <p class="photo-note">A few frames from the kind of love that feels like home ❤️</p>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <p class="eyebrow">03 — OPEN WHEN YOU'RE READY</p>
+      <h2>A Little Letter, <span>Just for You</span></h2>
+      <p class="section-intro">There are some things the heart can only say when the world gets quiet.</p>
+
+      <div class="letter-card">
+        <div class="envelope">♡</div>
+        <p class="letter-label">SEALED WITH LOVE</p>
+        <h3>To My Favorite Person,</h3>
+        <p class="letter-preview">I've been saving a few words for your special day...</p>
+        <button class="btn primary" id="openLetter">Open Your Letter 💌</button>
+
+        <div class="letter-message" id="letterMessage" hidden>
+          <p>Happy Birthday, my favorite person. ❤️</p>
+          <p>Today is a reminder of how lucky this world is to have you in it. Your smile makes ordinary moments special, and your presence brings a kind of happiness that words can never fully explain.</p>
+          <p>I hope this new chapter brings you peace when life gets loud, courage when things feel difficult, and countless reasons to smile. May your dreams come closer, your heart stay hopeful, and your days be filled with people who appreciate you.</p>
+          <p>And if there's one thing I wish for you today, it's that you always remember how truly special you are.</p>
+          <p class="signature">With all my love, always. ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wishes-section" id="wishes">
+      <p class="eyebrow">04 — A WISH INTO THE UNIVERSE</p>
+      <h2>Today Is <span>All About You</span></h2>
+      <p class="section-intro">May life surprise you with the very things your heart has been wishing for.</p>
+
+      <div class="wish-box">
+        <div class="big-heart">♥</div>
+        <h3>Happy Birthday, My Favorite Person!</h3>
+        <p>More laughter. More beautiful memories. More reasons to believe that the best is still ahead.</p>
+        <button class="btn primary" id="wishButton">Make a Birthday Wish ✨</button>
+        <p id="wishResult" class="wish-result" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with <span>♥</span> for someone truly special.</p>
+    <a href="#surface">BACK TO THE SURFACE ↑</a>
+  </footer>
+
+  <button class="music-button" id="musicButton" aria-label="Toggle ambient sound">♫</button>
+
+  <audio id="birthdaySong" loop>
+    <source src="Meri Zindagi Hai Tu Full Song _ Jubin Nautiyal _ John A, Divya K _ Rochak ft Jubin _ New Songs 2025.mp4" type="video/mp4">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
